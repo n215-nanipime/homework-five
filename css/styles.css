@@ -1,0 +1,180 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: white;
+  position: relative;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin-bottom: 16px;
+}
+
+#app {
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+@font-face {
+  font-family: myFirstFont;
+  src: url(../fonts/proxima_nova_extra_condensed_thin-webfont.woff);
+}
+@font-face {
+  font-family: mySecondFont;
+  src: url(../fonts/proxima-nova-thin-webfont.woff);
+}
+@font-face {
+  font-family: myThirdFont;
+  src: url(../fonts/proximanovascosfextracondensed-webfont.woff);
+}
+nav {
+  max-width: 980px;
+  margin: 0 auto;
+  min-height: 92px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: solid;
+  border-bottom-color: black;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 15px;
+  font-weight: normal;
+}
+nav .logo {
+  width: 92px;
+  height: 38px;
+}
+nav .links a {
+  text-decoration: none;
+  margin-left: 10px;
+  color: #000000;
+}
+nav .links span {
+  color: #79addc;
+  margin-left: 10px;
+}
+
+footer {
+  height: 100px;
+  background-color: #79addc;
+}
+footer .footer-content {
+  color: #ffffff;
+  max-width: 980px;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+footer .footer-content p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+.about {
+  margin-top: 110px;
+  margin-bottom: 180px;
+}
+.about .about-header h1 {
+  margin-bottom: 2px;
+  font-family: mySecondFont, myThirdFont;
+  font-size: 60px;
+  font-style: bold;
+}
+.about .about-header p {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-weight: normal;
+}
+.about .about-header .border-bottom {
+  width: 171px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 3%;
+}
+.about .about-client-quotes {
+  margin-top: 107px;
+}
+.about .about-client-quotes .client-quote-title {
+  font-family: mySecondFont, myThirdFont;
+  font-size: 40px;
+  font-weight: bold;
+  margin-bottom: 2px;
+}
+.about .about-client-quotes .border-bottom-two {
+  width: 255px;
+  height: 2px;
+  background-color: #000;
+  margin-bottom: 3%;
+}
+.about .about-client-quotes .client-box {
+  max-width: 722px;
+  display: flex;
+  position: relative;
+  margin-bottom: 30px;
+}
+.about .about-client-quotes .client-box .client-image {
+  width: 260px;
+  height: 150px;
+  overflow: hidden;
+  margin-right: 21px;
+}
+.about .about-client-quotes .client-box .client-image img {
+  width: 100%;
+}
+.about .about-client-quotes .client-box .client-quote {
+  max-width: 440px;
+  margin-bottom: 20px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-size: 16px;
+  font-style: italic;
+}
+.about .about-client-quotes .client-box .client-name {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  color: #79addc;
+  font-family: mySecondFont;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+@media all and (max-width: 800px) {
+  .about {
+    text-align: center;
+    flex-direction: column;
+  }
+  .about .about-header .border-bottom {
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+  .about .about-client-quotes .border-bottom-two {
+    margin: 0 auto;
+    margin-bottom: 3%;
+  }
+  .about .about-client-quotes .client-box {
+    flex-direction: column;
+  }
+  .about .about-client-quotes .client-box .client-image {
+    margin: 0 auto;
+  }
+  .about .about-client-quotes .client-box .client-quote {
+    margin: 0 auto;
+  }
+  .about .about-client-quotes .client-box .client-name {
+    position: relative;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
